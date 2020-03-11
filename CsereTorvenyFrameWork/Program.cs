@@ -24,9 +24,8 @@ namespace CsereTorvenyFrameWork
 
 				while ((beolvasottSor = fileToRead.ReadLine()) != null)
 				{
-					ujsor = "";
 					rendelet = beolvasottSor.Replace("törvény", "rendelet");
-					ujsor += rendelet;					
+					ujsor = rendelet;					
 					fileToWrite.WriteLine(ujsor);
 				}
 				fileToWrite.Close();
